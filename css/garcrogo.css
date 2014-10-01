@@ -468,6 +468,10 @@ ul {
     text-align: center;
 }
 
+.puppies-price p:last-child {
+    margin-bottom: 0;
+}
+
 /* Contact
    ========================================================================== */
 
