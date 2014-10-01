@@ -293,6 +293,16 @@ ul {
 .gallery {
     margin-top: 20px;
     overflow: hidden;
+
+    color: #F1EEEA;
+    font-style: italic;
+    font-family: "Georgia";
+    font-size: 18px;
+    background: #4D3140;
+}
+
+.gallery img {
+    width: 100%;
 }
 
 .gallery-col-3,
@@ -305,12 +315,6 @@ ul {
     overflow: hidden;
     height: 100%;
     width: 100%;
-
-    background: #4D3140;
-    color: #F1EEEA;
-    font-style: italic;
-    font-family: "Georgia";
-    font-size: 18px;
 }
 
 .gallery-col-3  {   width: 600px;   }
@@ -319,34 +323,6 @@ ul {
 .gallery-row-3  {   height: 600px;  }
 .gallery-row-2  {   height: 400px;  }
 .gallery-row-1  {   height: 200px;  }
-
-.gallery-fit-height {
-    width: auto !important;
-}
-
-.gallery-col-3 img {  width: 600px;    }
-.gallery-col-2 img {  width: 400px;    }
-.gallery-col-1 img {  width: 200px;    }
-
-.gallery-row-3 img.gallery-fit-height {   height: 600px;   }
-.gallery-row-2 img.gallery-fit-height {   height: 400px;   }
-.gallery-row-1 img.gallery-fit-height {   height: 200px;   }
-
-.gallery-center-image {
-    font-size: 0;
-    width: 2000px;
-    height: 2000px;
-    line-height: 2006px;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.gallery-col-3 .gallery-center-image  {   margin-left: -700px;    }
-.gallery-col-2 .gallery-center-image  {   margin-left: -800px;    }
-.gallery-col-1 .gallery-center-image  {   margin-left: -900px;    }
-.gallery-row-3 .gallery-center-image {   margin-top: -700px;     }
-.gallery-row-2 .gallery-center-image {   margin-top: -800px;     }
-.gallery-row-1 .gallery-center-image {   margin-top: -900px;     }
 
 .gallery-center-text {
     display: table;
