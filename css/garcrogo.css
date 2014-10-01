@@ -236,8 +236,7 @@ ul {
 
 .intro {
     position: relative;
-    height: 620px;
-    overflow: hidden;
+    padding-top: 100px;
 
     border-bottom: 20px solid #2C2A27;
 }
@@ -261,13 +260,6 @@ ul {
     font-style: italic;
     font-size: 30px;
 }
-
-.intro-background {
-    width: 100%;
-    position: relative;
-    top: -55px;
-}
-
 
 /* About
    ========================================================================== */
