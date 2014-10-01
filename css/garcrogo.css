@@ -86,6 +86,17 @@ body {
     font-weight: normal;
 }
 
+.heading + .heading2 {
+    margin-top: -30px;
+}
+
+.heading3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+
+    font-weight: lighter;
+    text-align: center;
+}
 
 /* ==========================================================================
    Sections
@@ -400,13 +411,15 @@ body {
 }
 
 .price-value {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.price .price-value {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-
-    font-weight: lighter;
-    font-size: 30px;
 }
 
 .price-disclaimer {
@@ -466,6 +479,12 @@ body {
     margin-bottom: 1em;
 }
 
+
+/* Puppies */
+
+.puppies-price {
+    text-align: center;
+}
 
 /* Contact
    ========================================================================== */
