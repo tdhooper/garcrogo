@@ -24,7 +24,27 @@ body {
    Common
    ========================================================================== */
 
-.section-title {
+
+/* Anchor (for in page linking)
+   ========================================================================== */
+
+.anchor {
+    position: relative;
+}
+
+.anchor-target {
+    position: absolute;
+    top: -100px;
+}
+
+
+/* Headings
+   ========================================================================== */
+
+.heading {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+
     margin-top: 0;
     padding-top: 40px;
     margin-bottom: 25px;
@@ -35,7 +55,7 @@ body {
     font-size: 30px;
 }
 
-.section-title:before {
+.heading:before {
     content: "";
     display: block;
     position: absolute;
@@ -44,27 +64,24 @@ body {
     top: 62px;
 }
 
-.section-title-inner {
+.heading-inner {
     background: #fff;
     position: relative;
     padding: 0 15px;
 }
 
-.section-marker {
-    position: absolute;
-    top: -100px;
-}
+.heading2 {
+    font-size: 1.17em;
+    margin: 1em 0;
 
-.subtitle {
     margin-top: 0;
     padding-top: 30px;
     margin-bottom: 20px;
-    position: relative;
 
     text-align: center;
 }
 
-.subtitle em {
+.heading2 em {
     font-style: italic;
     font-weight: normal;
 }
