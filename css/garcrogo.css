@@ -278,6 +278,12 @@ ul {
 
 .about-cols p {
     margin-top: 0;
+
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    -o-column-break-inside: avoid;
+    -ms-column-break-inside: avoid;
+    column-break-inside: avoid;
 }
 
 /* Gallery */
