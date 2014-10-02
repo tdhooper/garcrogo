@@ -109,11 +109,11 @@ ul {
 }
 
 .heading .anchor-target {
-    top: -140px;
+    top: -30px;
 }
 
 .heading3 .anchor-target {
-    top: -120px;
+    top: -10px;
 }
 
 /* ==========================================================================
@@ -125,7 +125,7 @@ ul {
    ========================================================================== */
 
 .header {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: 800px;
     height: 100px;
