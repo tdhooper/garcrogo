@@ -91,6 +91,11 @@ ul {
     text-align: center;
 }
 
+.heading4 {
+    font-size: inherit;
+    margin: 1em 0;
+}
+
 
 /* Anchor (for in page linking)
    ========================================================================== */
@@ -268,22 +273,47 @@ ul {
     border-top: 10px solid #A9D538;
 }
 
-.about-cols {
+.about-statement {
+    font-size: 1.17em;
+    margin: 1em 0;
+
+    font-weight: lighter;
+}
+
+.about-signature {
+    text-align: right;
+    font-weight: lighter;
+    margin-top: -0.5em;
+    margin-bottom: 2em;
+}
+
+.about-services {
             columns: 2;
     -webkit-columns: 2;
        -mox-columns: 2;
 
     margin-top: 1em;
+    padding-left: 0;
 }
 
-.about-cols p {
+.about-services li {
     margin-top: 0;
+    margin-bottom: 1em;
 
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
     -o-column-break-inside: avoid;
     -ms-column-break-inside: avoid;
     column-break-inside: avoid;
+}
+
+.about-services .heading4 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.about-services strong {
+    display: block;
 }
 
 /* Gallery */
