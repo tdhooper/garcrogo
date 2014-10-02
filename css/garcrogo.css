@@ -542,20 +542,22 @@ ul {
     border: none;
 }
 
-.opening-times dt {
-    float: left;
-    clear: right;
+.opening-times {
+    padding-left: 0;
+    list-style-type: none;
 }
 
-.opening-times dd {
+.opening-times li {
+    margin-bottom: 1em;
+}
+
+.opening-times li:last-child {
+    margin-bottom: 0;
+}
+
+.opening-times-hours {
     float: right;
     font-weight: bold;
-    margin-bottom: 1em;
-    margin-left: 0;
-}
-
-.opening-times dd:last-child {
-    margin-bottom: 0;
 }
 
 

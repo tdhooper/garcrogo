@@ -14,13 +14,15 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/garcrogo.css">
     </head>
-    <body>
+    <body itemscope itemtype="http://schema.org/LocalBusiness">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <header class="header">
-            <a href="#" class="logo"><h1 class="logo-heading">Garcrogo Pet Boarding</h1></a>
+            <a href="#" class="logo">
+                <h1 class="logo-heading" itemprop="name">Garcrogo Pet Boarding</h1>
+            </a>
             <nav role="navigation" class="site-nav">
                 <ul>
                     <li><a href="#kennels">Kennels</a></li>
@@ -33,7 +35,7 @@
 
         <section class="intro">
             <div class="intro-text">
-                <h2>Luxury pet boarding near Corsock, Castle Douglas</h2>
+                <h2 itemprop="description">Luxury pet boarding near Corsock, Castle Douglas</h2>
             </div>
             <img src="img/intro.jpg" width="800px" height="520px" alt="Diana and David Hamilton">
         </section>
@@ -244,33 +246,62 @@
                 <div class="contact-col contact-col--details">
                     <h3 class="heading2">Email</h3>
 
-                    <p><a href="info@garcrogo-pet-boarding.co.uk">info@garcrogo-pet-boarding.co.uk</a></p>
+                    <p itemprop="email"><a href="info@garcrogo-pet-boarding.co.uk">info@garcrogo-pet-boarding.co.uk</a></p>
                     
                     <h3 class="heading2">Phone</h3>
                     <ul>
-                        <li>0164 4440 514</li>
-                        <li>0796 7054 486</li>
-                        <li>0779 4579 259</li>
+                        <li itemprop="telephone">0164 4440 514</li>
+                        <li itemprop="telephone">0796 7054 486</li>
+                        <li itemprop="telephone">0779 4579 259</li>
                     </ul>
 
                     <h3 class="heading2">Address</h3>
 
-                    <p>
-                        Garcrogo Pet Boarding,<br/>
-                        Corsock,<br/>
-                        Castle Douglas,<br/>
-                        DG7 3EB
+                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Garcrogo Pet Boarding,</span><br/>
+                        <span itemprop="addressLocality">Corsock,</span><br/>
+                        <span itemprop="addressRegion">Castle Douglas,</span><br/>
+                        <span itemprop="postalCode">DG7 3EB</span>
                     </p>
 
                     <h3 class="heading2">Opening Hours</h3>
 
-                    <dl class="opening-times">
-                        <dt>End March to end October:</dt>
-                        <dd>10am — 5pm</dd>
-
-                        <dt>End October to end March:</dt>
-                        <dd>11am — 4pm</dd>
-                    </dl>
+                    <ul class="opening-times">
+                        <li
+                            itemprop="openingHoursSpecification"
+                            itemscope
+                            itemtype="http://schema.org/OpeningHoursSpecification"
+                        >
+                            <span class="opening-times-months">
+                                <time itemprop="validFrom" datetime="--04">End March</time>
+                                to
+                                <time itemprop="validThrough" datetime="--11">end October</time>
+                                :
+                            </span>
+                            <span class="opening-times-hours">
+                                <time itemprop="opens" datetime="Mo-Su 10:00">10am</time>
+                                —
+                                <time itemprop="closes" datetime="Mo-Su 17:00">5pm</time>
+                            </span>
+                        </li>
+                        <li
+                            itemprop="openingHoursSpecification"
+                            itemscope
+                            itemtype="http://schema.org/OpeningHoursSpecification"
+                        >
+                            <span class="opening-times-months">
+                                <time itemprop="validFrom" datetime="--11">End October</time>
+                                to
+                                <time itemprop="validThrough" datetime="--04">end March</time>
+                                :
+                            </span>
+                            <span class="opening-times-hours">
+                                <time itemprop="opens" datetime="Mo-Su 11:00">11am</time>
+                                —
+                                <time itemprop="closes" datetime="Mo-Su 16:00">4pm</time>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
                 <div class="contact-col">
                     <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d584637.7520704892!2d-3.9870000000000005!3d55.082784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9cf1cf0f52e0e19!2sGARCROGO+PET+BOARDING!5e0!3m2!1sen!2sus!4v1411941554360"></iframe>
