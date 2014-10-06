@@ -290,10 +290,11 @@ ul {
 .about-services {
             columns: 2;
     -webkit-columns: 2;
-       -mox-columns: 2;
+       -moz-columns: 2;
 
     margin-top: 1em;
     padding-left: 0;
+    list-style-type: none;
 }
 
 .about-services li {
