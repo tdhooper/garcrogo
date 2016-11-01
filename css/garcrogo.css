@@ -404,6 +404,55 @@ ul {
 
 /* Prices */
 
+.price-table {
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.price-table-col-label {
+    width: 110px;
+}
+
+.price-table thead th {
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.price-table th,
+.price-table td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.price-table td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.price-table tbody th {
+    text-align: right;
+}
+
+.price-table-highlight {
+    background: #eee;
+}
+
+.price-table-highlight + .price-table-highlight td {
+    padding-top: 0;
+}
+
+.price-table-disclaimer td {
+    padding-bottom: 20px;
+}
+
+.price-subtitle {
+    display: block;
+    font-size: .75em;
+}
+
+
+
 .price {
     position: relative;
     float: left;
@@ -419,6 +468,10 @@ ul {
 
 .price-list--three .price {
     width: 33.333%;
+}
+
+.price-list--four .price {
+    width: 25%;
 }
 
 .price-grade {
@@ -448,7 +501,7 @@ ul {
 
 .price-value .price-disclaimer {
     position: absolute;
-    margin-left: 5px;    
+    margin-left: 5px;
 }
 
 /* Additional costs */
