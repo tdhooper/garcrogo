@@ -446,9 +446,28 @@ ul {
 
 /* Additional costs */
 
-.additional-costs-table {
-    width: 100%;
+.additional-costs-list {
+    list-style-type: none;
 }
+
+.additional-cost-header {
+    text-align: center;
+}
+
+.additional-cost-heading {
+    display: inline;
+}
+
+.additional-cost-price {
+    display: inline;
+}
+
+.additional-cost-price:before {
+    content: "–";
+    margin-right: 0.5em;
+    margin-left: 0.2em;
+}
+
 
 .additional-cost {
     position: relative;
@@ -479,11 +498,6 @@ ul {
 .additional-costs-condition {
     padding-right: 0.5em;
     text-align: right;
-}
-
-.additional-costs-price:before {
-    content: "–";
-    margin-right: 0.5em;
 }
 
 .additional-costs-description {
