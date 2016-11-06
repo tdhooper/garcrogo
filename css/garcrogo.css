@@ -471,24 +471,24 @@ ul {
 
 .additional-costs-condition,
 .additional-costs-price {
-    width: 33.333%;
+    box-sizing: border-box;
+    width: 50%;
     float: left;
 }
 
 .additional-costs-condition {
-    text-align: left;
-    clear: right;
+    padding-right: 0.5em;
+    text-align: right;
 }
 
-.additional-costs-price {
-    clear: left;
+.additional-costs-price:before {
+    content: "–";
+    margin-right: 0.5em;
 }
 
 .additional-costs-description {
-    width: 66.666%;
-    float: right;
-    margin-top: -22px;
-    margin-bottom: 1em;
+    clear: left;
+    padding-top: 1em;
 }
 
 
