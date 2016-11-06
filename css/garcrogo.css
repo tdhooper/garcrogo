@@ -373,28 +373,25 @@ ul {
 /* Tariff
    ========================================================================== */
 
-/* Layout */
-
-.daily-tariff {
-    overflow: hidden;
-}
-
-.daily-tariff-single,
-.daily-tariff-multiple {
-    float: left;
-}
-
-.daily-tariff-single {
-    width: 40%;
-}
-
-.daily-tariff-multiple {
-    width: 60%;
-
+.tariff-rate {
     background: #eee;
-    border-left: 1px dashed #666;
-    margin-left: -1px;
+    padding: 2em 1em;
+    margin-bottom: 2em;
 }
+
+.tariff-rate .heading2 {
+    margin-top: 0;
+}
+
+.tariff-rate-detail {
+    text-align: center;
+}
+
+.tariff-rate-detail + .tariff-rate-detail {
+    margin-top: -1em;
+}
+
+/* Layout */
 
 .price-list {
     margin: 0;
@@ -410,15 +407,10 @@ ul {
     list-style-type: none;
     text-align: center;
     padding-top: 45px;
-    margin-bottom: 20px;
 }
 
-.price-list--two .price {
-    width: 50%;
-}
-
-.price-list--three .price {
-    width: 33.333%;
+.price-list .price {
+    width: 25%;
 }
 
 .price-grade {
@@ -432,9 +424,10 @@ ul {
 .price-value {
     font-weight: lighter;
     font-size: 30px;
+    margin-top: 0;
 }
 
-.price .price-value {
+.price-grade + .price-value {
     position: absolute;
     top: 0;
     left: 0;
@@ -448,14 +441,33 @@ ul {
 
 .price-value .price-disclaimer {
     position: absolute;
-    margin-left: 5px;    
+    margin-left: 5px;
 }
 
 /* Additional costs */
 
-.additional-costs-table {
-    width: 100%;
+.additional-costs-list {
+    list-style-type: none;
 }
+
+.additional-cost-header {
+    text-align: center;
+}
+
+.additional-cost-heading {
+    display: inline;
+}
+
+.additional-cost-price {
+    display: inline;
+}
+
+.additional-cost-price:before {
+    content: "–";
+    margin-right: 0.5em;
+    margin-left: 0.2em;
+}
+
 
 .additional-cost {
     position: relative;
@@ -478,24 +490,19 @@ ul {
 
 .additional-costs-condition,
 .additional-costs-price {
-    width: 33.333%;
+    box-sizing: border-box;
+    width: 50%;
     float: left;
 }
 
 .additional-costs-condition {
-    text-align: left;
-    clear: right;
-}
-
-.additional-costs-price {
-    clear: left;
+    padding-right: 0.5em;
+    text-align: right;
 }
 
 .additional-costs-description {
-    width: 66.666%;
-    float: right;
-    margin-top: -22px;
-    margin-bottom: 1em;
+    clear: left;
+    padding-top: 1em;
 }
 
 
