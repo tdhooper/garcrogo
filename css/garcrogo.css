@@ -243,27 +243,34 @@ ul {
     position: relative;
     padding-top: 100px;
 
-    border-bottom: 20px solid #2C2A27;
+    border-bottom: 20px solid #322e24;
 }
 
 .intro-text {
     position: absolute;
-    top: 250px;
-    right: 0;
-    width: 50%;
+    bottom: 20px;
+    left: 0;
+    width: 470px;
     z-index: 1;
 }
 
 .intro-text h2 {
-    background: #2C2A27;
-    color: #F1EEEA;
+    background: #322e24;
+    color: #e9e7e2;
 
-    padding: 15px 20px;
+    padding: 15px 40px;
+    padding-right: 100px;
+    margin: 0;
 
     font-family: 'Georga';
     font-weight: normal;
     font-style: italic;
     font-size: 30px;
+
+    background-image: url('../img/paw.svg');
+    background-size: 130px 63%;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
 }
 
 /* About
